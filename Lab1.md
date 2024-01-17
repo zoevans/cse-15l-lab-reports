@@ -13,34 +13,44 @@ When cd is followed by a path to a directory as an argument, nothing is printed,
   
 3) path to a file as an argument
 
-![Image](cd_file.png)
+![Image](cd_file_BEST.png)
 
 When cd is followed by a path to a file as an argument, you stay in the same directory, but you recieve an error message stating that the action isn't possible because the file isn't a possible directory to switch to. In this example, I was in the messages directory, and after the command was run, I still remained in the same directory, and the terminal printed an error that stated the file was not a valid argument because it was "Not a directory." This means that you can only include a directory as an argument after cd, not a path to a file. The output was definitely an error because the cd command failed to take me to a different directory and the terminal stated that the argument inputted was not valid because it was not a directory.
 
 ls
 1) no arguments
 
-
+![Image](ls_noArgs.png)
    
 When ls is followed by no arguments, you stay in the same directory, but the terminal prints the different potential directories that you can move to that are contained within the current directory that you are in. In this example, I was in the messages directory, and after the command was run, I stayed in the same directory, and the terminal printed the subdirectories contained within the messages directory that I could move to. This means that when you don't include an argument after the ls command, the terminal will print the names of the different directories that you could possibly switch to while you're in your current directory. The output was not an error because the terminal printed useful information about which directories I was able to move to.
 
 2) path to a directory as an argument
 
+![Image](ls_directory.png)
+
 When ls is followed by a path to a directory as an argument, you stay in the same directory and the terminal prints the different subdirectories contained within the directory that was used as an argument. For example, I was in the highest directory, and after the command was run, I stayed in the same directory, and the terminal printed the subdirectories contained within the lectures directory, which was the same directory that I used as the argument. This means that when you use a path to a directory as an argument after the ls command, you will stay in the same directory, and the terminal will print the list of subdirectories contained within the directory that you used as an argument. The output was not an error because the terminal printed useful information about what subdirectories were contained in the directory that I used as an argument.
 
 3) path to a file as an argument
 
-When ls is followed by a path to a file as an argument, you stay in the same directory, and the terminal prints out an error, stating that the action isn't possible because the argument was not a valid directory. In this example, I was in the lectures directory, and after the command was run, I stayed in the same directory, and the terminal printed an error message, stating that the file used as an argument was not a valid argument because it was "Not a directory." This means that you can only include a directory as an argument after ls, not a path to a file. The output was obviously an error because the ls command failed to complete any action and the terminal verified that the argument inputted was not valid because it was not a directory.
+![Image](ls_file.png)
+
+When ls is followed by a path to a file as an argument, you stay in the same directory, and the terminal prints out the name of the file. In this example, I was in the lectures directory, and after the command was run, I stayed in the same directory, and the terminal printed "Hello.java" which was the name of the file that I used as the argument. This means that if you include a possible path to a file as an argument after the ls command, the terminal will print the name of the file. The output was not an error because the terminal performed an action with no error message.
 
 cat
 1) no arguments
+
+![Image](cat_noArgs.png)
 
 When cat is followed by no arguments, you are given the option to type in text, and the terminal will print 2 lines of whatever text you inputted before pressing enter. For example, I was in the lecture directory, and after the command was run with no arguments, I was taken to the next line and typed in the text "hello world" and pressed enter. As a result, the terminal printed a duplicate of the line, leaving two printed lines of the text "hello world." This means that if you include no arguments after the cat command, the terminal will print 2 lines of whatever text you enter into the prompted terminal line. The output was not an error because the terminal performed an action without an error message.  
 
 2) path to a directory as an argument
 
+![Image](cat_directory.png)
+
 When cat is followed by a path to a directory as an argument, you stay in the same directory, and the terminal prints an error message, stating that the argument provided is a directory. In this example, I was in the lecture directory, and after the command was run, I stayed in the same directory, and the terminal printed an error message, stating that the argument used "Is a directory" and no futher action was taken. This means that if you include a directory as an argument after the cat command, the terminal will keep you in the same directory and provide you with an error message prompting you to choose something other than a directory as an argument. Therefore, the output was definitely an error because there was an error message and the terminal performed no action.
 
 3) path to a file as an argument
+
+![Image](cat_file.png)
 
 When cat was followed by a path to a file as an argument, you stay in the same directory, and the terminal prints all of the text included in the file that was used as the argument. In this example, I was in the lecture directory, and after the command was run, I stayed in the same directory, and the terminal printed all of the text that was included in the Hello.java file, which was the file that I used as the argument. This means that if you use a path to a file as an argument for a cat command, it will print the text contents of whatever file is inputted as the argument. The output was not an error as the terminal did not provide an error message and an action was executed. 
